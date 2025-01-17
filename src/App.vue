@@ -37,7 +37,7 @@
                         >
                             {{ todo.content }}
                         </div>
-                        <div class="column is-5 has-text-right">
+                        <div class="column is-flex has-text-right">
                             <button
                                 @click="toggleDone(todo.id)"
                                 class="button"
@@ -123,8 +123,13 @@ const toggleDone = (id) => {
 @import "bulma/css/bulma.min.css";
 
 .badass-todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 400px;
     padding: 20px;
     margin: 0 auto;
+    height: 100vh;
 }
 </style>
